@@ -201,7 +201,7 @@ div.button-div > button:hover{
     .div-one,
     .div-two,
     .div-three{
-        gap: 15px;
+        gap: 10px;
         flex-direction: column;
     }
     input{
