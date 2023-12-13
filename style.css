@@ -130,7 +130,9 @@ input{
 input:user-invalid{
     border-color: red;
 }
-
+input::placeholder{
+    font-size: 0.75rem;
+}
 div.button-div{
     align-self: center;
     width: 100%;
