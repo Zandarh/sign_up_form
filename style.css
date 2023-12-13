@@ -7,6 +7,10 @@ html{
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
 }
+@font-face{
+    font-family: "Kimberley";
+    src: url(http://www.princexml.com/fonts/larabie/kimberle.ttf) format("truetype");
+}
 body{
     height: 100vh;
 }
