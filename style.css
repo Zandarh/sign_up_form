@@ -196,7 +196,7 @@ div.button-div > button:hover{
         display: none;
     }
     .form-div{
-        gap: 8px;
+        gap: 10px;
     }
     .div-one,
     .div-two,
@@ -205,7 +205,7 @@ div.button-div > button:hover{
         flex-direction: column;
     }
     input{
-        height: 1.6rem;
+        height: 1.7rem;
         padding: 5px;
         width: 100%;
     }
