@@ -47,20 +47,21 @@
                         <div class="div-three">
                             <div>
                                 <label for="password">Password:</label>
-                                <input type="password" name="password" id="userPassword" placeholder="password" required>
+                                <input class="password" type="password" name="password" id="userPassword" placeholder="password" required>
                             </div>
-                            <div>
+                            <div id="error-div">
                                 <label for="confirmPassword">Confirm password:</label>
-                                <input type="password" name="confirmPassword" id="confirm-password" placeholder="confirm password" required>
+                                <input class="passwordConfirm" type="password" name="confirm-password" id="confirmPassword" placeholder="confirm password" required>
                             </div>
                         </div>
                         <div class="button-div">
-                            <button type="submit">Sign Up</button>
+                            <button id="btn" type="submit">Sign Up</button>
                             <p>Aleady have an account? <a href="#">Log in</a></p>
                         </div>
                     </div>
                 </form>
         </div>
     </div>
+    <script src="main.js"></script>
 </body>
 </html>

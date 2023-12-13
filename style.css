@@ -131,6 +131,7 @@ div.button-div{
     align-self: center;
     width: 100%;
     border-radius: 10px;
+    position: relative;
 }
 
 div.button-div > button{
@@ -156,6 +157,14 @@ div.button-div > button:hover{
     color: blue;
     background-color: #ffff;
 }
+.error{
+    margin: 2px;
+    position: absolute;
+    color: red;
+    top: 10;
+    left: 2;
+}
+
 @media only screen and (max-width: 480px){
     .container{
         flex-direction: column;
@@ -212,6 +221,12 @@ div.button-div > button:hover{
     div.button-div > button{
         margin-top: 5px;
         font-size: 1.5rem;
+    }
+    div.button-div{
+        position: static;
+    }
+    .error{
+        position: static;
     }
 }
 @media only screen and (max-width: 961px){
