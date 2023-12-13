@@ -156,7 +156,7 @@ div.button-div > button:hover{
     color: blue;
     background-color: #ffff;
 }
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 480px){
     .container{
         flex-direction: column;
         gap: 40px;
@@ -212,5 +212,10 @@ div.button-div > button:hover{
     div.button-div > button{
         margin-top: 5px;
         font-size: 1.5rem;
+    }
+}
+@media only screen and (max-width: 961px){
+    form{
+        width: 70%;
     }
 }
