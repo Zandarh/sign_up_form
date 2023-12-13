@@ -1,0 +1,201 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    height: 100vh;
+}
+.container{
+    height: 100%;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+}
+
+.left{
+    width: 40%;
+    height: 100%;
+    position: relative;
+    color: white;
+    border-radius: 0 50px 50px 0;
+}
+div.left .image{
+    width: 100%;
+    height: 100%;
+    background: url(img/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0 50px 50px 0;
+}
+div.left .gradient{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(20deg, blue, rgb(255, 2, 2));
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.7;
+    border-radius: 0 50px 50px 0;
+}
+div.left .heading{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div.heading > h1{
+    text-align: center;
+    font-size: 2.3rem;
+}
+.right{
+    height: 100%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+div.right .logo{
+    width: 15%;
+}
+div.logo > img{
+    width: 100%;
+}
+form{
+    width: 55%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    height: 60%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    border-radius: 10px;
+
+}
+
+.form-heading > h1{
+    font-size: 1.5rem;
+    color: blue;
+}
+.form-div{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.div-one,
+.div-two,
+.div-three{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+label{
+    display: block;
+    font-size: 0.7rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+    color: grey;
+}
+button,
+input
+{
+    font-family: inherit;
+    font-size: 100%;
+}
+input{
+    height: 2rem;
+    padding: 5px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid grey;
+    outline: none;
+}
+input:user-invalid{
+    border-color: red;
+}
+
+div.button-div{
+    align-self: center;
+    width: 100%;
+    border-radius: 10px;
+}
+
+div.button-div > button{
+    color: #ffff;
+    background-color: blue;
+    font-size: 1.8rem;
+    padding: 3px;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100%;
+}
+
+div.button-div > button:hover{
+    border: 1px solid blue;
+    color: blue;
+    background-color: #ffff;
+}
+@media only screen and (max-width: 600px){
+    .container{
+        flex-direction: column;
+    }
+    .left{
+        height: 30%;
+        border-radius: 50px 50px 50px 50px;
+        width: 100%;
+    }
+    .left .gradient{
+        border-radius: 50px 50px 50px 50px;
+        width: 100%;
+    }
+    .left .image{
+        border-radius: 50px 50px 50px 50px;
+        width: 100%;
+    }
+    .right{
+        width: 100%;
+        height: 90%;
+        justify-content: flex-start;
+    }
+    form{
+        width: 80%;
+        height: 90%;
+        gap: 20px;
+        padding: 5px;
+        justify-content: flex-start;
+    }
+    div.right .logo{
+        width: 0;
+    }
+    .form-div{
+        gap: 10px;
+    }
+    .div-one,
+    .div-two,
+    .div-three{
+        gap: 20px;
+        flex-direction: column;
+    }
+    input{
+        height: 2rem;
+        padding: 5px;
+        width: 100%;
+    }
+    div.button-div > button{
+        margin-top: 5px
+    }
+}
