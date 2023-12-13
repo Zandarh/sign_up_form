@@ -71,7 +71,7 @@ div.logo > img{
 form{
     width: 55%;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    height: 60%;
+    height: 65%;
     padding: 10px;
     display: flex;
     flex-direction: column;
@@ -81,7 +81,9 @@ form{
     border-radius: 10px;
 
 }
-
+.form-heading{
+    margin-bottom: 10px;
+}
 .form-heading > h1{
     font-size: 1.5rem;
     color: blue;
@@ -139,6 +141,14 @@ div.button-div > button{
     border-radius: 10px;
     cursor: pointer;
     width: 100%;
+    margin-bottom: 10px;
+}
+div.button-div > p{
+    text-align: center;
+    font-size: 0.8rem;
+}
+div.button-div a{
+    text-decoration: none;
 }
 
 div.button-div > button:hover{
@@ -149,7 +159,7 @@ div.button-div > button:hover{
 @media only screen and (max-width: 600px){
     .container{
         flex-direction: column;
-        gap: 20px;
+        gap: 40px;
     }
     .left{
         height: 20%;
@@ -177,7 +187,7 @@ div.button-div > button:hover{
     }
     form{
         width: 70%;
-        height: 100%;
+        height: 90%;
         gap: 8px;
         padding: 5px;
         justify-content: flex-start;
