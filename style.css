@@ -12,7 +12,7 @@ body{
 }
 .container{
     height: 100%;
-    width: 100vw;
+    width: 100%;
     display: flex;
     align-items: center;
 }
@@ -149,6 +149,7 @@ div.button-div > button:hover{
 @media only screen and (max-width: 600px){
     .container{
         flex-direction: column;
+        gap: 20px;
     }
     .left{
         height: 20%;
@@ -157,14 +158,12 @@ div.button-div > button:hover{
         border-radius: 0 0 20px 20px;
     }
     .left .gradient{
-        height: 30%;
-        border-radius: none;
+        height: 20%;
         width: 100%;
         border-radius: 0 0 20px 20px;
     }
     .left .image{
-        height: 30%;
-        border-radius: none;
+        height: 20%;
         width: 100%;
         border-radius: 0 0 20px 20px;
     }
@@ -177,30 +176,31 @@ div.button-div > button:hover{
         justify-content: flex-start;
     }
     form{
-        width: 80%;
-        height: 90%;
-        gap: 20px;
+        width: 70%;
+        height: 100%;
+        gap: 8px;
         padding: 5px;
         justify-content: flex-start;
     }
     div.right .logo{
-        width: 0;
+        display: none;
     }
     .form-div{
-        gap: 10px;
+        gap: 8px;
     }
     .div-one,
     .div-two,
     .div-three{
-        gap: 20px;
+        gap: 15px;
         flex-direction: column;
     }
     input{
-        height: 2rem;
+        height: 1.6rem;
         padding: 5px;
         width: 100%;
     }
     div.button-div > button{
-        margin-top: 5px
+        margin-top: 5px;
+        font-size: 1.5rem;
     }
 }
